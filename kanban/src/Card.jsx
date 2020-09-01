@@ -25,7 +25,7 @@ const SDeleteButton = styled.button`
 
 const SCard = styled.div`
   border: 1px solid rgba(0, 0, 0, .125);
-  border-redius: .25rem;
+  border-radius: .25rem;
   background: #eee;
   box-shadow: 0 1px 0 rgba(9, 30, 66, .25);
   width: 250px;
