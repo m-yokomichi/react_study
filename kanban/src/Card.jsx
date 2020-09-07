@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-function Card({ title }) {
+function Card({ title, removeCard}) {
     return (
         <SCard>
             <p>{ title }</p>
-            <SDeleteButton>削除</SDeleteButton>
+            <SDeleteButton onClick={() => {removeCard()}}>削除</SDeleteButton>
         </SCard>
     );
 }
@@ -28,7 +28,7 @@ const SCard = styled.div`
   border-radius: .25rem;
   background: #eee;
   box-shadow: 0 1px 0 rgba(9, 30, 66, .25);
-  width: 250px;
+  width: 244px;
 
   padding: 6px 8px;
 
