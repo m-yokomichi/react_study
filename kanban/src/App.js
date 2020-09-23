@@ -27,6 +27,7 @@ function App() {
     shownCreateCardListModal: false
   })
   const { cardLists , shownCreateCardModal, targetListIndex, shownCreateCardListModal} = state
+
   const openCreateCardModal = (targetListIndex) => {
     setState({
       ...state,
@@ -74,6 +75,7 @@ function App() {
   const setCards = cardLists.map((_, listIndex) => {
     return (newCards) => {
       cardLists[listIndex].cards = newCards
+      console.log(listIndex)
       setState({ ...state, cardLists })
     }
   })
